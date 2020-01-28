@@ -10,9 +10,7 @@ export const Quiz = () => {
 
   return (
     <div className="app-container">
-      <div className="header">
-        <h1>Quiz</h1>
-      </div>
+      
       {!quizOver && <CurrentQuestion />}
       {!quizOver && <Footer />}
 

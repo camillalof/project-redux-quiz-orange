@@ -17,7 +17,7 @@ export const CurrentQuestion = () => {
   return (
     <div className="container">
       <div className="question">
-        <h1>Question:</h1>
+        <h1> QUI💡Z</h1>
         <h2>{unescape(question.questionText)}</h2>
       </div>
      <Answers/>

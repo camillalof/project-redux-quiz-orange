@@ -1,33 +1,61 @@
-.summaryContainer {
-    background-color: #6AB187;
-    font-family: Roboto;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 700px;
+    width: 90%;
 }
 
-h2 {
+.summaryContainer {
+    background-color: #9e69f3;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+p {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 span {
-    background-color: #F4CC70
+    background-color: #9e69f3;
 }
 
 .resultContainer {
-    background-color: #DE7a22;
+    background-color: #9e69f3;
     display: flex;
     justify-content: space-around;
 }
 
 .scoreContainer {
-    background-color: #F4CC70;
+    background-color: #FFFF;
     display: flex;
     justify-content: center;
     margin-top: 15px;
     font-size: 20px;
+    font-weight: bold;
+    border: solid 5px turquoise;
     padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.result {
+    border: solid 2px black;
+    width: 100px;
 }

@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 
 
 
+
 export const Summary = () => {
   const allAnswers = useSelector((state) => state.quiz.answers)
   console.log(allAnswers)
@@ -13,18 +14,20 @@ export const Summary = () => {
 
   return (
     <>
+    <header className="scoreContainer">Your score is: {amountCorrect.length}/{allAnswers.length}!!!</header>
+    <section>
       {allAnswers.map((answer) => (
+
         <div className="summaryContainer">
-          <h2>{answer.question.questionText}</h2>
-
-
-          <div className="resultContainer">
-            <h2 className="userAnswer">Your answer was: {answer.question.options[answer.question.correctAnswerIndex]}</h2>
-            <span><h2>And it was: {answer.isCorrect ? 'correct' : 'incorrect'}</h2></span>
-          </div>
+  
+          <span className="summary-text">
+            <span className="summary-question">{answer.question.questionText}</span>
+            <span className="summary-answer">  Your answer: {answer.question.options[answer.question.correctAnswerIndex]}</span>
+            <span className="result">{answer.isCorrect ? ' Right 👍😆 ' : ' Wrong 👎😢' }</span>
+          </span>
         </div>
-      ))}
-      <div className="scoreContainer">Your score is: {amountCorrect.length}/{allAnswers.length}</div>
+        ))}
+      </section>
     </>
   )
 

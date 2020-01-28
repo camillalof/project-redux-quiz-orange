@@ -16,7 +16,7 @@ export default function Timer() {
   return (
     <div className="timer">
       {elapsedSeconds < timeAllowed && <h1>Time left: {timeAllowed - elapsedSeconds}</h1>}
-      {elapsedSeconds > timeAllowed && <h1>Time's up!!!</h1>}
+      {elapsedSeconds > timeAllowed && <h1>Time's up!!! 🕗</h1>}
     </div>
   );
 }
